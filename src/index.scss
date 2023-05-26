@@ -1,0 +1,11 @@
+@import "~normalize.css";
+@import "style/fonts";
+@import "style/var";
+@import "style/style";
+
+@import "./modules/modal/modal.scss";
+@import "./modules/scrollToTop/scrollToTop.scss";
+@import "./modules/navbar/nav.scss";
+@import "./modules/btn/btn.scss";
+@import "./modules/accordion/accordion.scss";
+@import "./modules/select/select.scss";

@@ -1,0 +1,62 @@
+.modal {
+  &[data-state="true"] {
+    position: fixed;
+    display: flex;
+    z-index: 1000;
+    align-items: center;
+    justify-content: center;
+
+    background-color: rgba(#000000, 0.5);
+
+    width: 100%;
+    height: 100%;
+  }
+
+  &[data-state="false"] {
+    display: none;
+  }
+  &__window-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1001;
+  }
+  &__window {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    z-index: 1002;
+
+    max-width: 600px;
+    padding: 2rem;
+
+    background-color: var(--bg-color);
+    color: var(--text-color);
+  }
+  &__window-heading {
+    color: var(--text-color);
+  }
+  &__window-close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+
+    width: 2rem;
+    height: 2rem;
+    padding: 0;
+    margin: 0;
+
+    border: none;
+    background-color: transparent;
+    color: var(--text-color);
+    font-size: 1.5rem;
+  }
+  &__window-text {
+  }
+  &__window-btns {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+  }
+}

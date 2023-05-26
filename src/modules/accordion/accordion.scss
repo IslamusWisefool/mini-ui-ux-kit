@@ -1,0 +1,50 @@
+.accordion {
+  &[data-state="false"] {
+    &::after {
+      font-size: 1.5rem;
+      font-weight: bold;
+      position: absolute;
+      content: "˅";
+      top: calc(50% - 0.7rem);
+      right: 1rem;
+      color: var(--accent);
+    }
+    & .accordion__body {
+      display: none;
+    }
+  }
+
+  &[data-state="true"] {
+    &::after {
+      font-size: 1.5rem;
+      font-weight: bold;
+      position: absolute;
+      content: "˄";
+      top: 1rem;
+      right: 1rem;
+      color: var(--accent);
+    }
+    & .accordion__body {
+      display: block;
+    }
+  }
+
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+
+  margin: 0 auto 1rem;
+  padding: 1rem;
+  max-width: 75ch;
+  text-align: left;
+
+  background-color: var(--bg-color);
+  box-shadow: var(--box-shadow);
+
+  &__title {
+  }
+  &__body {
+    padding: 1rem 0;
+  }
+}

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UI/UX kit</title>
+  </head>
+  <body>
+    <!-- SCROLL TO TOP START -->
+
+    <div data-state="false" class="scrollToTop"></div>
+
+    <!-- SCROLL TO TOP END -->
+
+    <!-- MODAL WINDOW START -->
+
+    <div data-state="false" data-modal="" class="modal">
+      <div class="modal__window-overlay"></div>
+      <div class="modal__window">
+        <h2 class="modal__window-heading">Atention!</h2>
+        <button class="modal__window-close">x</button>
+        <p class="modal__window-text">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci
+          blanditiis magni culpa aliquam hic aperiam, nostrum placeat natus sint
+          aut?
+        </p>
+        <div class="modal__window-btns">
+          <button class="btn">Ok</button>
+          <button class="btn">Close</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODAL WINDOW END -->
+
+    <!-- NAVIGATION START -->
+
+    <section class="container">
+      <h1 class="container__heading">Navbar</h1>
+      <nav class="nav">
+        <ul data-state="false" class="nav__menu">
+          <li class="nav__menu-item">
+            <a class="nav__menu-item-link" href="#">Home</a>
+          </li>
+          <li class="nav__menu-item">
+            <a class="nav__menu-item-link" href="#">About</a>
+          </li>
+          <li class="nav__menu-item">
+            <a class="nav__menu-item-link" href="#">Blog</a>
+          </li>
+        </ul>
+        <button id="toggle-theme" class="btn nav__theme">Change theme</button>
+        <div data-state="false" class="nav__burger">
+          <span class="nav__burger-line"></span>
+        </div>
+      </nav>
+    </section>
+
+    <!-- NAVIGATION END -->
+
+    <!-- ACCORDION START -->
+
+    <section class="container">
+      <h1 class="container__heading">Accordion</h1>
+      <div class="accordion" data-state="false">
+        <div class="accordion__title">Lorem ipsum dolor sit amet.</div>
+        <div class="accordion__body">
+          <p class="accordion__body-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
+            asperiores sunt eaque omnis voluptatem sint magnam aliquam veniam
+            dolore eligendi.
+          </p>
+        </div>
+      </div>
+      <div class="accordion" data-state="false">
+        <div class="accordion__title">Lorem ipsum dolor sit amet.</div>
+        <div class="accordion__body">
+          <p class="accordion__body-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
+            asperiores sunt eaque omnis voluptatem sint magnam aliquam veniam
+            dolore eligendi.
+          </p>
+        </div>
+      </div>
+      <div class="accordion" data-state="false">
+        <div class="accordion__title">Lorem ipsum dolor sit amet.</div>
+        <div class="accordion__body">
+          <p class="accordion__body-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
+            asperiores sunt eaque omnis voluptatem sint magnam aliquam veniam
+            dolore eligendi.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ACCORDION END -->
+
+    <!-- BUTTONS START -->
+
+    <div class="container">
+      <h1 class="container__heading">Buttons</h1>
+
+      <button data-btn="default" class="btn btn-def">Default</button>
+
+      <button data-btn="warning" class="btn btn-warn">Warning</button>
+
+      <button data-btn="succes" class="btn btn-succ">Succes</button>
+
+      <button data-btn="danger" class="btn btn-danger">Danger</button>
+
+      <button data-btn="info" class="btn btn-info">Info</button>
+    </div>
+
+    <!-- BUTTONS END -->
+
+    <!-- SELECT START -->
+
+    <div class="container">
+      <h1 class="container__heading">Select</h1>
+
+      <select name="select" class="select">
+        <option class="select__option" value="value1">Значение 1</option>
+        <option class="select__option" value="value2" selected>
+          Значение 2
+        </option>
+        <option class="select__option" value="value3">Значение 3</option>
+      </select>
+    </div>
+
+    <!-- SELECT END -->
+  </body>
+</html>

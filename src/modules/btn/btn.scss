@@ -1,0 +1,51 @@
+.btn {
+  background-color: var(--btn-bg-color);
+  color: var(--btn-text-color);
+  text-transform: uppercase;
+  padding: 1em;
+  border: none;
+  border-radius: 0.4em;
+  transition: transform 0.2s linear;
+  &:hover {
+    cursor: pointer;
+    background-color: var(--btn-bg-color_hover);
+    transform: scale(1.03);
+  }
+  &:active {
+    transform: scale(0.95);
+  }
+
+  &:focus {
+    outline: 3px solid #4e89ff;
+  }
+
+  &[data-btn] {
+    border: 2px solid var(--btn-text-color);
+  }
+
+  &[data-btn="default"] {
+    --btn-bg-color: #002727;
+    --btn-text-color: #8ce6e6;
+    --btn-bg-color_hover: #004242;
+  }
+  &[data-btn="warning"] {
+    --btn-bg-color: #f4f1d8;
+    --btn-text-color: #d2c230;
+    --btn-bg-color_hover: #d2d0b9;
+  }
+  &[data-btn="succes"] {
+    --btn-bg-color: #d1ded1;
+    --btn-text-color: #185c17;
+    --btn-bg-color_hover: #b9c8b9;
+  }
+  &[data-btn="danger"] {
+    --btn-bg-color: #fff5f5;
+    --btn-text-color: #b21212;
+    --btn-bg-color_hover: #e4dada;
+  }
+  &[data-btn="info"] {
+    --btn-bg-color: #d4dbea;
+    --btn-text-color: #284d97;
+    --btn-bg-color_hover: #c2c9d8;
+  }
+}
